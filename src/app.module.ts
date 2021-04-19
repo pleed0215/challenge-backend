@@ -32,7 +32,7 @@ import { AuthModule } from "./auth/auth.module";
                 }),
           }
         : { type: "sqlite", database: "db.sqlite3" }),
-      synchronize: false,
+      synchronize: true,
       logging: process.env.NODE_ENV !== "production",
       entities: [Podcast, Episode, User, Review],
     }),
