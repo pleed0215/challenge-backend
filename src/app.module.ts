@@ -19,7 +19,7 @@ import { AuthModule } from "./auth/auth.module";
             type: "postgres",
             ...(process.env.DATABASE_URL
               ? {
-                  url: process.env.JAWSDB_URL,
+                  url: process.env.DATABASE_URL,
                   ssl: { rejectUnauthorized: false },
                 }
               : {
